@@ -90,7 +90,7 @@ Goal: Watch inbound directories for "ready for ingest" objects.  If "ready for i
 
 
 ## Notes
-* File is named "zready.txt", intentionally beginning with the letter "z", so when rsync'ed "zready.txt" should transfer last due to alphabetical order.
+* Archivist control file "zready.txt" is named intentionally beginning with the letter "z", so when rsync'ed, "zready.txt" should transfer last due to alphabetical order.
 * Archivist's can populate NAS subdirectories and coordinate ingests, and place "zready.txt" into subdirectory when truly ready
 * To add more objects to a given collection, NAS subdirectory should be cleared and loaded with fresh objects.  A new "zready.txt" file should be created OR the existing "zready.txt" file can be edited, a slight modification made, and saved.  NAS-based rsync crontab is configured to not overwrite "zready.txt" file already present on server-side unless it is different.
 * ingest.sh is programmed to disable islandora_bagit_create_on_modify, because a fresh bagit bag will be created after each derivative datastream is generated and added to an ingested object.   We re-enable islandora_bagit_create_on_modify during nightly server maintenance, which runs after ingest operation are observed to be fully complete.
