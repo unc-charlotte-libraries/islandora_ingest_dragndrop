@@ -72,6 +72,7 @@ Goal: Watch inbound directories for "ready for ingest" objects.  If "ready for i
 * Install server-side "incron-watchdog" scripts
 * Edit "ingest.php" script, defining drush paths, defining inbound directories and their specific ingest parameters, including namespace, content model, and parent collection where inbound objects should be ingested
 * Edit "ingest.sh" script, defining drush paths and islandora_batch parameters
+* Edit "/etc/incron.allow", defining which user can use incron, i.e. root
 * `incrontab -e`
 ```
 /path/to/inbound/nas/directory/loadingdock/seagate-nas/sandbox/jpeg_png_gif IN_CLOSE_WRITE /usr/bin/php /path/to/incron-watchdog/watchdog.php directory="$@" filename="$#"
