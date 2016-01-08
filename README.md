@@ -21,6 +21,7 @@ Designed for ease of use by Archivists, who are in authoritative control; a meth
 * SSH server
 * rsync
 * PHP CLI
+* nohup
 * [incron](https://packages.debian.org/search?keywords=incron)
 * [islandora_batch](https://github.com/Islandora/islandora_batch)
 
