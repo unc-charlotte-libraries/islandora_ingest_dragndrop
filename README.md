@@ -62,7 +62,7 @@ System does not have to be a commercial NAS, any Linux-based server with file sh
 Goal: Watch inbound directories for "ready for ingest" objects.  If "ready for ingest" are seen, ingest using islandora_batch after upload from NAS completes.
 
 * Install server-side "incron-watchdog" scripts
-* Edit "ingest.php" script, defining inbound directories and ingest parameters, including namespace, content model, and parent collection where objects should be ingested
+* Edit "ingest.php" script, defining drush paths, defining inbound directories and their specific ingest parameters, including namespace, content model, and parent collection where inbound objects should be ingested
 * Edit "ingest.sh" script, defining drush paths and islandora_batch parameters
 * `incrontab -e`
 ```
