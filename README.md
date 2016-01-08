@@ -10,7 +10,7 @@
 </pre>
 ## Introduction
 
-Designed for ease of use by Archivists, who are in authoritative control; a methodology for creating a drag and drop batch ingest workflow powered by a local Linux-based NAS system integrated with an Islandora ingest server. 
+Designed for ease of use by Archivists, who are in authoritative control; a methodology for creating a drag-and-drop batch ingest workflow powered by a local Linux-based NAS system integrated with an Islandora ingest server. 
 
 
 
