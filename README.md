@@ -106,7 +106,7 @@ Goal: Watch inbound directories for "ready for ingest" objects.  If "ready for i
 
 ## Troubleshooting/Issues
 
-* Two readied NAS collections can collide and nothing will ingest properly.   Archivist's should coordinate collection ingestion operations using offline communications to avoid two readied collections from colliding.   The collision issue is primarily caused by the author's programming, which can be obviously be improved upon.  For example, the programming could be changed to execute only "islandora_batch_scan_preprocess" operations when objects arrive on the server, and wait until all "islandora_batch_scan_preprocess" operations are completed before running "islandora_batch_ingest" once.
+* Two readied NAS collections can collide and nothing will ingest properly.   Archivist's should coordinate collection ingestion operations using offline communications to avoid two readied collections from colliding.   The collision issue is primarily caused by the author's programming, which can obviously be improved upon.  For example, the programming could be changed to execute only "islandora_batch_scan_preprocess" operations when objects arrive on the server, and wait until all "islandora_batch_scan_preprocess" operations are completed before running "islandora_batch_ingest" once.
 
 
 ## Maintainers
