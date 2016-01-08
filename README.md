@@ -93,7 +93,7 @@ Goal: Watch inbound directories for "ready for ingest" objects.  If "ready for i
 ## Customization
 
 * Every bit of this methodology is ripe for customization
-* Example: A way to create the NAS subdirectory structure using automation is highly desired, such automation could be powered by a repository structure query
+* Example: A way to create the local NAS subdirectory structure using automation is highly desired, such automation could possibly be powered by a repository structure query
 
 ## Troubleshooting/Issues
 
