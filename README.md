@@ -86,7 +86,7 @@ Goal: Watch inbound directories for "ready for ingest" objects.  If "ready for i
 * Archivist's can populate NAS subdirectories and coordinate ingests, and place "zready.txt" into subdirectory when truly ready
 * To add more objects to a given collection, NAS subdirectory should be cleared and loaded with fresh objects.  A new "zready.txt" file should be created OR the existing "zready.txt" file can be edited, a slight modification made, and saving.  NAS-based rsync crontab is configured not to overwrite "zready.txt" file already present on server-side unless it is different.
 * ingest.sh is programmed to disable islandora_bagit_create_on_modify, because a fresh bagit bag will be generated after each derivative datastream is generated and added to an ingested object.   We re-enable islandora_bagit_create_on_modify during nightly server maintenance, which runs after ingests are observed to be fully complete.
-* ingest.sh runs ingests using `nohup command &` for true process backgrounding; ingest will run for as long as required or until server resources are absolutely depleted
+* ingest.sh runs ingests using `nohup command &` for true process backgrounding; ingest will run for as long as required or until server resources are absolutely depleted (right-sizing and tuning server infrastructure will not be covered here :-)
 * ingest.sh creates ingest.log files in each subdirectory to be ingested, for your review
 
 
