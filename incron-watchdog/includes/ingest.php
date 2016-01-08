@@ -4,7 +4,7 @@ $namespace = "test";
 $content_model = "islandora:sp_basic_image";
 $parent = "test:1";
 rename("$directory/zready.txt", "$directory/.zready.txt");
-$command = "/usr/local/bin/drush -c /usr/local/drush/drushrc.php -v --user=drupaladministratorroleuser --uri=https://islandora.server.edu islandora_batch_scan_preprocess --namespace=$namespace --content_models=$content_model --parent=$parent --parent_relationship_pred=isMemberOfCollection --type=directory --target=$directory";
+$command = "/usr/local/bin/drush -c /usr/local/drush/drushrc.php -v --user=drupaladministratorroleuser --uri=http://islandora.server.edu islandora_batch_scan_preprocess --namespace=$namespace --content_models=$content_model --parent=$parent --parent_relationship_pred=isMemberOfCollection --type=directory --target=$directory";
 exec ("/path/to/incron-watchdog/includes/ingest.sh $namespace $content_model $parent $directory");
 rename("$directory/.zready.txt", "$directory/zready.txt");
 } 
@@ -13,7 +13,7 @@ $namespace = "test";
 $content_model = "islandora:sp_large_image_cmodel";
 $parent = "test:1";
 rename("$directory/zready.txt", "$directory/.zready.txt");
-$command = "/usr/local/bin/drush -c /usr/local/drush/drushrc.php -v --user=drupaladministratorroleuser --uri=https://islandora.server.edu islandora_batch_scan_preprocess --namespace=$namespace --content_models=$content_model --parent=$parent --parent_relationship_pred=isMemberOfCollection --type=directory --target=$directory";
+$command = "/usr/local/bin/drush -c /usr/local/drush/drushrc.php -v --user=drupaladministratorroleuser --uri=http://islandora.server.edu islandora_batch_scan_preprocess --namespace=$namespace --content_models=$content_model --parent=$parent --parent_relationship_pred=isMemberOfCollection --type=directory --target=$directory";
 exec ("/path/to/incron-watchdog/includes/ingest.sh $namespace $content_model $parent $directory");
 rename("$directory/.zready.txt", "$directory/zready.txt");
 } 
@@ -22,7 +22,7 @@ $namespace = "test";
 $content_model = "islandora:sp_pdf";
 $parent = "test:1";
 rename("$directory/zready.txt", "$directory/.zready.txt");
-$command = "/usr/local/bin/drush -c /usr/local/drush/drushrc.php -v --user=drupaladministratorroleuser --uri=https://islandora.server.edu islandora_batch_scan_preprocess --namespace=$namespace --content_models=$content_model --parent=$parent --parent_relationship_pred=isMemberOfCollection --type=directory --target=$directory";
+$command = "/usr/local/bin/drush -c /usr/local/drush/drushrc.php -v --user=drupaladministratorroleuser --uri=http://islandora.server.edu islandora_batch_scan_preprocess --namespace=$namespace --content_models=$content_model --parent=$parent --parent_relationship_pred=isMemberOfCollection --type=directory --target=$directory";
 exec ("/path/to/incron-watchdog/includes/ingest.sh $namespace $content_model $parent $directory");
 rename("$directory/.zready.txt", "$directory/zready.txt");
 } 
