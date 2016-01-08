@@ -17,7 +17,7 @@ Designed for ease of use by Archivists, who are in authoritative control; a meth
 ### NAS Requirements
 
 * Linux-based NAS system or equivalent
-* SSH client
+* SSH server and client
 * rsync
 * ssh-keygen
 * cron
